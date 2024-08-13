@@ -31,3 +31,10 @@ const adventurer = {
   }
 
   // Part 2: Class Fantasy
+
+  class Character {
+    constructor(name) {
+      this.name = name;
+      this.health = 100;
+      this.inventory = [];
+    }
