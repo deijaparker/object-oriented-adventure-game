@@ -77,3 +77,9 @@ robin.inventory = ["sword", "potion", "artifact"];
 robin.companion = new Companion("Leo", "Cat");
 robin.companion.companion = new Companion("Frank", "Flea");
 robin.companion.companion.inventory = ["small hat", "sunglasses"];
+
+// Testing the roll and scout methods
+robin.roll();
+robin.scout();
+robin.companion.roll();
+robin.companion.scout();
