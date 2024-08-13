@@ -19,3 +19,7 @@ const adventurer = {
       console.log(`${this.name} rolled a ${result}.`);
     }
   };
+
+   // Testing the roll method
+   adventurer.roll();
+   adventurer.roll(5);
