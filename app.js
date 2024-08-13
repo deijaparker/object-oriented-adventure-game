@@ -23,3 +23,9 @@ const adventurer = {
    // Testing the roll method
    adventurer.roll();
    adventurer.roll(5);
+
+  // Logging each item in Robin's inventory
+  console.log("Robin's Inventory:");
+  for (let item of adventurer.inventory) {
+    console.log(item);
+  }
