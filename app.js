@@ -44,3 +44,20 @@ const adventurer = {
         console.log(`${this.name} rolled a ${result}.`);
       }
     }
+
+    class Adventurer extends Character {
+        static ROLES = ["Fighter", "Healer", "Wizard"];
+        constructor(name, role) {
+          super(name);
+          this.role = role;
+          if (!Adventurer.ROLES.includes(role)) {
+            throw new Error(`Invalid role: ${role}. Valid roles are ${Adventurer.ROLES.join(", ")}`);
+          }
+          this.inventory.push("bedroll", "50 gold coins");
+        }
+      
+        scout() {
+          console.log(`${this.name} is scouting ahead...`);
+          this.roll();
+        }
+      }      
