@@ -29,3 +29,5 @@ const adventurer = {
   for (let item of adventurer.inventory) {
     console.log(item);
   }
+
+  // Part 2: Class Fantasy
