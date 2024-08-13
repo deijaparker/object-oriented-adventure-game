@@ -70,3 +70,10 @@ class Companion extends Character {
     this.type = type;
   }
 }
+
+// Creating instances using classes
+const robin = new Adventurer("Robin", "Fighter");
+robin.inventory = ["sword", "potion", "artifact"];
+robin.companion = new Companion("Leo", "Cat");
+robin.companion.companion = new Companion("Frank", "Flea");
+robin.companion.companion.inventory = ["small hat", "sunglasses"];
